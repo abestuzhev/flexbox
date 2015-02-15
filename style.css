@@ -10,14 +10,14 @@ p{
 span{
 	position:absolute;
 	font:bold 1.5em Arial,sans-serif;
-	color:#fff;
+	color:#000;
 	display: inline-block;
 	top:6px;
 	left:6px;
 }
 /*position:relative*/
 /***********************************/
-.parent, .child, .flex-container{
+.parent, .child, .flex-container, .nav{
 	position:relative;
 }
 
@@ -29,11 +29,15 @@ span{
 }
 
 .box1{
-	background: #ACFF9D;
+	background: #D6FFCE;
 }
 
 .box2{
 	background: #FDF2CC;
+}
+
+.box3{
+	background: #C4EFFF;
 }
 
 /*example 1*/
@@ -44,7 +48,7 @@ span{
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	background: #F7B46A;
+	background: #7AFE84;
 	height:300px;
 }
 
@@ -66,7 +70,7 @@ span{
 	flex-flow: row wrap;
 	padding-top: 40px;
 	justify-content:space-around;
-	background: #F8CE3F;
+	background: #FBDE7D;
 }
 
 .flex-item{
@@ -79,4 +83,50 @@ span{
 	margin:10px;
 	font-weight:bold;
 	font-size:2em;
+}
+
+/*example 3*/
+/***********************************/
+.nav{
+	background: #4FCEFF;
+	padding: 0;
+	margin: 0;
+	list-style:none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content:flex-end;
+}
+
+.nav a{
+	padding: 1em;
+	display: block;
+	text-decoration: none;
+	color:#fff;
+}
+
+.nav a:hover{
+	background: #79DAFF;
+}
+
+@media all and (max-width:800px){
+	span{
+		display:none;
+	}
+	.nav{
+		justify-content: center;
+	}
+}
+
+@media all and (max-width:500px){
+	.nav{
+		flex-direction:column;
+		text-align:center;
+	}
+	.nav li{
+		border-bottom:1px solid #008FC6;
+	}
 }
