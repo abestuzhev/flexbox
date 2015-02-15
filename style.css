@@ -147,13 +147,10 @@ span{
 	flex-flow: row wrap;
 }
 
-.wrapper>*{
-	padding:20px;
-}
-
 .header, .main, .aside, .footer{
 	flex: 1 100%;
 	border:1px solid #ccc;
+	padding:20px;
 }
 
 .header{
@@ -183,3 +180,6 @@ span{
   .aside-2 { order: 3; }
   .footer  { order: 4; }
 }
+
+/*end*/
+/***********************************/
