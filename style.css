@@ -40,6 +40,10 @@ span{
 	background: #C4EFFF;
 }
 
+.box4{
+	background: #F1C9E6;
+}
+
 /*example 1*/
 /***********************************/
 .parent{
@@ -129,4 +133,53 @@ span{
 	.nav li{
 		border-bottom:1px solid #008FC6;
 	}
+}
+
+/*example 4*/
+/***********************************/
+
+.wrapper{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.wrapper>*{
+	padding:20px;
+}
+
+.header, .main, .aside, .footer{
+	flex: 1 100%;
+	border:1px solid #ccc;
+}
+
+.header{
+	background: #939685;
+	text-align:center;
+}
+.main{
+	background: #CBCCC4;
+}
+.aside{
+	text-align:center;
+	background: #6A6C5E;
+}
+.footer{
+	text-align:center;
+	background: #545649;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 4 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
 }
