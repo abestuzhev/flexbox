@@ -7,13 +7,31 @@
 </head>
 <body>
 	<!-- BEGIN box1 -->
-	<div class="box1">
+	<div class=" box box1">
+		<h2>Пример №1</h2>
+		<p>Этот пример основывается на том, что margin во flex-контейнере, заданный как auto, поглощает лишнее пространство, поэтому задание отступа таким образом выровняет элемент ровно по центру по обеим осям.</p>
 		<div class="parent">
+			<span>Parent</span>
 			<div class="child">
-				
+				<span>Child</span>
 			</div>
 		</div>
 	</div>
 	<!-- END box1 -->
+	<!-- BEGIN box2 -->
+	<div class=" box box2">
+		<h2>Пример №2</h2>
+		<p>Теперь давайте используем какие-нибудь свойства. Представьте набор из 6 элементов фиксированного размера (для красоты), но с возможностью изменения размера контейнера. Мы хотим равномерно распределить их по горизонтали, чтобы при изменении размера окна браузера всё выглядело хорошо (без @media-запросов!).</p>
+		<div class="flex-container">
+			<span>Flex-container</span>
+			<div class="flex-item">1</div>
+			<div class="flex-item">2</div>
+			<div class="flex-item">3</div>
+			<div class="flex-item">4</div>
+			<div class="flex-item">5</div>
+			<div class="flex-item">6</div>
+		</div>
+	</div>
+	<!-- END box2 -->
 </body>
 </html>

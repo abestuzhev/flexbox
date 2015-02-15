@@ -1,0 +1,82 @@
+body{
+	font-family:Arial, sans-serif;
+}
+
+p{
+	margin: 20px 0;
+	padding: 0;
+}
+
+span{
+	position:absolute;
+	font:bold 1.5em Arial,sans-serif;
+	color:#fff;
+	display: inline-block;
+	top:6px;
+	left:6px;
+}
+/*position:relative*/
+/***********************************/
+.parent, .child, .flex-container{
+	position:relative;
+}
+
+/*box*/
+/***********************************/
+.box{
+	padding: 10px;
+	margin:0 13% 20px;
+}
+
+.box1{
+	background: #ACFF9D;
+}
+
+.box2{
+	background: #FDF2CC;
+}
+
+/*example 1*/
+/***********************************/
+.parent{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	background: #F7B46A;
+	height:300px;
+}
+
+.child{
+	width: 150px;
+	height: 150px;
+	margin:auto;
+	background: #647591;border:1px solid #647591;
+}
+
+/*example 2*/
+/***********************************/
+.flex-container{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+	padding-top: 40px;
+	justify-content:space-around;
+	background: #F8CE3F;
+}
+
+.flex-item{
+	width:150px;
+	height: 150px;
+	line-height: 150px;
+	text-align:center;
+	color:#fff;
+	background: #EF5F5F;
+	margin:10px;
+	font-weight:bold;
+	font-size:2em;
+}
